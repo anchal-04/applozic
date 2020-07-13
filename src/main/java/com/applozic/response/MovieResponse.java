@@ -2,33 +2,33 @@ package com.applozic.response;
 
 import java.util.List;
 
-import com.applozic.dto.MovieDTO;
+import com.applozic.model.MovieModel;
 
 public class MovieResponse {
 
-	private List<MovieDTO> movieDTOs;
+	private List<MovieModel> movies;
 
-	private int totalAmount;
+	private long totalAmount;
 
-	public List<MovieDTO> getMovieDTOs() {
-		return movieDTOs;
+	public List<MovieModel> getMovies() {
+		return movies;
 	}
 
-	public void setMovieDTOs(List<MovieDTO> movieDTOs) {
-		this.movieDTOs = movieDTOs;
+	public void setMovies(List<MovieModel> movies) {
+		this.movies = movies;
 	}
 
-	public int getTotalAmount() {
+	public long getTotalAmount() {
 		return totalAmount;
 	}
 
-	public void setTotalAmount(int totalAmount) {
+	public void setTotalAmount(long totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 
 	@Override
 	public String toString() {
-		return "MovieResponse [movieDTOs=" + movieDTOs + ", totalAmount=" + totalAmount + "]";
+		return "MovieResponse [movies=" + movies + ", totalAmount=" + totalAmount + "]";
 	}
 
 }

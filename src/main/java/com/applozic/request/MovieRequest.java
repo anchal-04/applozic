@@ -2,23 +2,23 @@ package com.applozic.request;
 
 import java.util.List;
 
-import com.applozic.dto.MovieDTO;
+import com.applozic.model.MovieModel;
 
 public class MovieRequest {
 
-	private List<MovieDTO> movieDTOs;
+	private List<MovieModel> movieList;
 
-	public List<MovieDTO> getMovieDTOs() {
-		return movieDTOs;
+	public List<MovieModel> getMovieList() {
+		return movieList;
 	}
 
-	public void setMovieDTOs(List<MovieDTO> movieDTOs) {
-		this.movieDTOs = movieDTOs;
+	public void setMovieList(List<MovieModel> movieList) {
+		this.movieList = movieList;
 	}
 
 	@Override
 	public String toString() {
-		return "MovieRequest [movieDTOs=" + movieDTOs + "]";
+		return "MovieRequest [movieList=" + movieList + "]";
 	}
 
 }

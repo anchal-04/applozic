@@ -1,25 +1,24 @@
 package com.applozic.controller;
 
-import java.util.List;
-
-import org.springframework.http.ResponseEntity;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.applozic.api.MovieApi;
-import com.applozic.dto.MovieDTO;
 import com.applozic.request.MovieRequest;
-
-import io.swagger.annotations.Api;
-
+import com.applozic.response.MovieResponse;
+import com.applozic.service.MovieService;
 
 @RestController
-@Api(tags = "Movies")
-public class MovieController implements MovieApi {
+public class MovieController {
 
-	@Override
-	public ResponseEntity<List<MovieDTO>> getTotalAmount(MovieRequest movieRequest) {
-		// TODO Auto-generated method stub
-		return null;
+	@Autowired
+	private MovieService movieService;
+	
+	@PostMapping("/movies")
+	public MovieResponse getTotalAmount(@RequestBody MovieRequest movieRequest) {
+		return movieService.getTotalAmountAndMovies(movieRequest);
 	}
 
 }
