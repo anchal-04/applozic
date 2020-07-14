@@ -3,6 +3,10 @@ package com.applozic;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author Anchal
+ *
+ */
 @SpringBootApplication
 public class ApplozicApplication {
 

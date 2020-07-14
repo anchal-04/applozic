@@ -4,6 +4,10 @@ import java.util.List;
 
 import com.applozic.model.MovieModel;
 
+/**
+ * @author Anchal
+ *
+ */
 public class MovieResponse {
 
 	private List<MovieModel> movies;

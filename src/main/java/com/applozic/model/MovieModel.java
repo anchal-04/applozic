@@ -4,6 +4,10 @@ import java.time.LocalDate;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+/**
+ * @author Anchal
+ *
+ */
 public class MovieModel {
 
 	private String movieName;

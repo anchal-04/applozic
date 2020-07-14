@@ -4,10 +4,17 @@ import java.util.List;
 
 import com.applozic.model.MovieModel;
 
+/**
+ * @author Anchal
+ *
+ */
 public class MovieRequest {
 
 	private List<MovieModel> movieList;
 
+	/**
+	 * @return
+	 */
 	public List<MovieModel> getMovieList() {
 		return movieList;
 	}

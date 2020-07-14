@@ -12,12 +12,15 @@ import com.applozic.request.MovieRequest;
 import com.applozic.response.MovieResponse;
 import com.applozic.service.MovieService;
 
+/**
+ * @author Anchal
+ *
+ */
 @Service
 public class MovieServiceImpl implements MovieService {
 
 	@Override
 	public MovieResponse getTotalAmountAndMovies(MovieRequest movieRequest) {
-		System.out.println(movieRequest.getMovieList());
 		if (movieRequest.getMovieList().isEmpty()) {
 			return null;
 		}
