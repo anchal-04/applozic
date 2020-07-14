@@ -1,11 +1,13 @@
 # applozic
 REST API where an actor can submit the data containing the list of movies with movie name, start date and end date and the API will return the total amount that he can make along with the final list of movies to select.
 
+# Steps to run :
+Clone the project in any ide. Run it as spring boot application. Using any API tool do a post request on below endpoint with the below json structure. The default port is 8080.
 
-#End Point Is -
+# End Point Is -
 /movies
 
-# Input Json is-
+# Input Json example-
 {
 	"movieList": [{
 			"movieName": "Bala",
